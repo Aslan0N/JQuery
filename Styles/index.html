@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer="defer" src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <a href="#">Link</a>
-    <h3>JQuery</h3>
-    <ul id="media-list">
-        <li class="item">JQuery Lessons</li>
-        <li class="item"><a href="#">Link</a></li>
-        <li class="item">Selectors</li>
+    <h3>jQuery</h3>
+    <ul id="media-ul">
+        <li class="item">List - 1</li>
+        <li>List - 2</li>
+        <li class="item">List - 3</li>
     </ul>
+    <script>
+        $("h3").css("border","1px solid green")
+
+        var styles = ({
+            border:"1px solid gold",
+            display: "inline-block",
+            color: "blueviolet",
+            padding:"10px",
+            margin:"10px"
+        })
+        $(".item").css(styles)
+    </script>
 </body>
 </html>
